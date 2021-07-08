@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tunas Bertumbuh | Homepage</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="../../../plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../../dist/css/adminlte.min.css" />
+    <!-- My Css -->
+    <link rel="stylesheet" href="../../../docs/assets/css/mycss.css" />
+  </head>
+  <body
+    class="hold-transition sidebar-mini"
+    style="font-family: 'Roboto', sans-serif; background-color: #f3f3f3"
+  >
+    <div class="wrapper">
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NavSide -->
+      <aside class="main-sidebar elevation-4" style="background-color: #1e6f5c">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-link">
+          <img
+            src="../../../dist/img/AdminLTELogo.png"
+            alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
+          <span class="brand-text text-light">AdminLTE 3</span>
+        </a>
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img
+                src="../../../dist/img/user2-160x160.jpg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
+            </div>
+            <div class="info">
+              <a href="#" class="d-block text-light">Alexander Pierce</a>
+            </div>
+          </div>
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <li class="nav-item border-bottom">
+                <a href="#" class="nav-link">
+                  <p class="text-light">Division</p>
+                </a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a href="#" class="nav-link">
+                  <p class="text-light">Member</p>
+                </a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a href="#" class="nav-link">
+                  <p class="text-light">Application</p>
+                </a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a href="#" class="nav-link">
+                  <p class="text-light">Applicant</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+      <!-- ./NavSide -->
+
+      <!-- Content -->
+      <div class="content-wrapper pt-3">
+        <section id="member-data">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <section class="content">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-header mb-3">List Member</h4>
+                      <h3 class="card-title">Pilih Generasi</h3>
+                      <div class="card-title pl-3">
+                        <ul class="nav nav-pill">
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle btn-1 text-white"
+                              data-toggle="dropdown"
+                              href="#"
+                              role="button"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              >Pilih Generasi</a
+                            >
+                            <div class="dropdown-menu">
+                              <a
+                                class="dropdown-item"
+                                href="#tab_1"
+                                data-toggle="tab"
+                              >
+                                <b>Angkatan 1.0</b>
+                              </a>
+                              <a
+                                class="dropdown-item"
+                                href="#tab_2"
+                                data-toggle="tab"
+                              >
+                                <b>Angkatan 2.0</b>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-tools">
+                        <button
+                          type="button"
+                          class="btn btn-success"
+                          data-toggle="modal"
+                          data-target="#exampleModalBaru"
+                        >
+                          Tambah Baru
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Content Generasi -->
+                  <div class="card">
+                    <div class="card-body p-0">
+                      <div class="tab-content">
+                        <div class="tab-pane" id="tab_1">
+                          <table class="table table-striped projects">
+                            <thead>
+                              <tr>
+                                <th>Nama</th>
+                                <th>Phone</th>
+                                <th>Divisi</th>
+                                <th>Departemen</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Nama A</td>
+                                <td>No HP A</td>
+                                <td>Divisi A</td>
+                                <td>Departemen A</td>
+                                <td class="project-actions text-right">
+                                  <a
+                                    class="btn btn-primary btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModal1"
+                                  >
+                                    <i class="fas fa-folder"> </i>
+                                    View
+                                  </a>
+                                  <a
+                                    class="btn btn-info btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalEdit1"
+                                    href="#"
+                                  >
+                                    <i class="fas fa-pencil-alt"> </i>
+                                    Edit
+                                  </a>
+                                  <a
+                                    class="btn btn-danger btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalDelete"
+                                    href="#"
+                                  >
+                                    <i class="fas fa-trash"> </i>
+                                    Delete
+                                  </a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>Nama B</td>
+                                <td>No HP B</td>
+                                <td>Divisi B</td>
+                                <td>Departemen B</td>
+                                <td class="project-actions text-right">
+                                  <a
+                                    class="btn btn-primary btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModal2"
+                                  >
+                                    <i class="fas fa-folder"> </i>
+                                    View
+                                  </a>
+                                  <a
+                                    class="btn btn-info btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalEdit2"
+                                    href="#"
+                                  >
+                                    <i class="fas fa-pencil-alt"> </i>
+                                    Edit
+                                  </a>
+                                  <a
+                                    class="btn btn-danger btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalDelete"
+                                    href="#"
+                                  >
+                                    <i class="fas fa-trash"> </i>
+                                    Delete
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="tab-pane" id="tab_2">
+                          <table class="table table-striped projects">
+                            <thead>
+                              <tr>
+                                <th>Division</th>
+                                <th>Departemen</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Division A</td>
+                                <td>Departemen A</td>
+                                <td class="project-actions text-right">
+                                  <a
+                                    class="btn btn-primary btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModal1"
+                                  >
+                                    <i class="fas fa-folder"> </i>
+                                    View
+                                  </a>
+                                  <a
+                                    class="btn btn-info btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalEdit1"
+                                    href="#"
+                                  >
+                                    <i class="fas fa-pencil-alt"> </i>
+                                    Edit
+                                  </a>
+                                  <a
+                                    class="btn btn-danger btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalDelete"
+                                    href="#"
+                                  >
+                                    <i class="fas fa-trash"> </i>
+                                    Delete
+                                  </a>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>Division B</td>
+                                <td>Departemen B</td>
+                                <td class="project-actions text-right">
+                                  <a
+                                    class="btn btn-primary btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModal2"
+                                  >
+                                    <i class="fas fa-folder"> </i>
+                                    View
+                                  </a>
+                                  <a
+                                    class="btn btn-info btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalEdit2
+                                    href="#"
+                                  >
+                                    <i class="fas fa-pencil-alt"> </i>
+                                    Edit
+                                  </a>
+                                  <a
+                                    class="btn btn-danger btn-sm"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalDelete"
+                                    href="#"
+                                  >
+                                    <i class="fas fa-trash"> </i>
+                                    Delete
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- ./Content Generasi -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ./Content -->
+
+      <!-- Footer -->
+      <section style="background-color: #1e6f5c">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#"
+                          >Copyright 2021 - Tunas Bertumbuh</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item border-right">
+                      <a class="nav-link text-white" href="#">Facebook</a>
+                    </li>
+                    <li class="nav-item border-right">
+                      <a class="nav-link text-white" href="#">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Tik-Tok</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.Footer -->
+    </div>
+
+    <!-- Modal Tambah Baru -->
+    <div
+      class="modal fade"
+      id="exampleModalBaru"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tambah Baru</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nama"
+                aria-label="Name"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Phone"
+                aria-label="phone"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email"
+                aria-label="email"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Status"
+                aria-label="status"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Divisi"
+                aria-label="divisi"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Generasi"
+                aria-label="generasi"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Manager"
+                aria-label="manager"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Instagram"
+                aria-label="instagram"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Twitter"
+                aria-label="twitter"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Facebook"
+                aria-label="facebook"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                aria-label="Testimoni"
+                placeholder="testimoni"
+              ></textarea>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Modal Tambah Baru -->
+
+    <!-- Modal Content View -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Division A</h3>
+          </div>
+          <div class="card-body">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <th>Nama</th>
+                  <td>NamaA</td>
+                  <td rowspan="5" class="text-center">
+                    <img src="../../../dist/img/AdminLTELogo.png" alt="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Phone</th>
+                  <td>No HP A</td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td>Email A</td>
+                </tr>
+                <tr>
+                  <th>Status</th>
+                  <td>Status A</td>
+                </tr>
+                <tr>
+                  <th>Divisi</th>
+                  <td>Divisi A</td>
+                </tr>
+                <tr>
+                  <th>Generasi</th>
+                  <td>Generasi A</td>
+                </tr>
+                <tr>
+                  <th>Manager</th>
+                  <td>Manager A</td>
+                </tr>
+                <tr>
+                  <th>Url Instagram</th>
+                  <td><a href="">#</a>instagram A</td>
+                </tr>
+                <tr>
+                  <th>Url Facebook</th>
+                  <td><a href="#"></a>Facebook A</td>
+                </tr>
+                <tr>
+                  <th>Url Twitter</th>
+                  <td><a href="#"></a>Twitter A</td>
+                </tr>
+                <tr>
+                  <th>Testimoni</th>
+                  <td><a href="#"></a>Testimoni A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Division B</h3>
+          </div>
+          <div class="card-body">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <th>Nama</th>
+                  <td>Nama B</td>
+                  <td rowspan="5" class="text-center">
+                    <img src="../../../dist/img/AdminLTELogo.png" alt="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Phone</th>
+                  <td>No HP B</td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td>Email B</td>
+                </tr>
+                <tr>
+                  <th>Status</th>
+                  <td>Status B</td>
+                </tr>
+                <tr>
+                  <th>Divisi</th>
+                  <td>Divisi B</td>
+                </tr>
+                <tr>
+                  <th>Generasi</th>
+                  <td>Generasi B</td>
+                </tr>
+                <tr>
+                  <th>Manager</th>
+                  <td>Manager B</td>
+                </tr>
+                <tr>
+                  <th>Url Instagram</th>
+                  <td><a href="#">instagram B</a></td>
+                </tr>
+                <tr>
+                  <th>Url Facebook</th>
+                  <td><a href="#">Facebook B</a></td>
+                </tr>
+                <tr>
+                  <th>Url Twitter</th>
+                  <td><a href="#">Twitter B</a></td>
+                </tr>
+                <tr>
+                  <th>Testimoni</th>
+                  <td><a href="#">Testimoni B</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Modal Content View -->
+
+    <!-- Modal Edit -->
+    <div
+      class="modal fade"
+      id="exampleModalEdit1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Division A</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nama"
+                aria-label="Name"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Phone"
+                aria-label="phone"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email"
+                aria-label="email"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Status"
+                aria-label="status"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Divisi"
+                aria-label="divisi"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Generasi"
+                aria-label="generasi"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Manager"
+                aria-label="manager"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Instagram"
+                aria-label="instagram"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Twitter"
+                aria-label="twitter"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Facebook"
+                aria-label="facebook"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                aria-label="Testimoni"
+                placeholder="testimoni"
+              ></textarea>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalEdit2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Division B</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nama"
+                aria-label="Name"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Phone"
+                aria-label="phone"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email"
+                aria-label="email"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Status"
+                aria-label="status"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Divisi"
+                aria-label="divisi"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Generasi"
+                aria-label="generasi"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Manager"
+                aria-label="manager"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Instagram"
+                aria-label="instagram"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Twitter"
+                aria-label="twitter"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Url Facebook"
+                aria-label="facebook"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                aria-label="Testimoni"
+                placeholder="testimoni"
+              ></textarea>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Modal Edit -->
+
+    <!-- Modal Delete -->
+    <div
+      class="modal fade"
+      id="exampleModalDelete"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Delete?</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Modal Delete -->
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="../../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../../dist/js/demo.js"></script>
+  </body>
+</html>

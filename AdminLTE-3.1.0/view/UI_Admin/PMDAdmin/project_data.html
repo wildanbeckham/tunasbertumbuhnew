@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tunas Bertumbuh | Project</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daterange picker -->
+    <link
+      rel="stylesheet"
+      href="../../../plugins/daterangepicker/daterangepicker.css"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="../../../plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../../dist/css/adminlte.min.css" />
+    <!-- My Css -->
+    <link rel="stylesheet" href="../../../docs/assets/css/mycss.css" />
+  </head>
+  <body
+    class="hold-transition sidebar-mini"
+    style="font-family: 'Roboto', sans-serif; background-color: #f3f3f3"
+  >
+
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+            ><i class="fas fa-bars"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- NavSide -->
+    <aside class="main-sidebar elevation-4" style="background-color: #1e6f5c">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+        <img
+          src="../../../dist/img/AdminLTELogo.png"
+          alt="AdminLTE Logo"
+          class="brand-image img-circle elevation-3"
+          style="opacity: 0.8"
+        />
+        <span class="brand-text text-light">AdminLTE 3</span>
+      </a>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img
+              src="../../../dist/img/user2-160x160.jpg"
+              class="img-circle elevation-2"
+              alt="User Image"
+            />
+          </div>
+          <div class="info">
+            <a href="#" class="d-block text-light">Alexander Pierce</a>
+          </div>
+        </div>
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul
+            class="nav nav-pills nav-sidebar flex-column"
+            data-widget="treeview"
+            role="menu"
+            data-accordion="false"
+          >
+            <li class="nav-item border-bottom">
+              <a href="#" class="nav-link">
+                <p class="text-light">Articles</p>
+              </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a href="#" class="nav-link">
+                <p class="text-light">Project</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+    <!-- ./NavSide -->
+
+    <!-- Content -->
+    <div class="content-wrapper pt-3">
+      <section id="donation-data">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <section class="content">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-header mb-3">List Project</h4>
+                    <div class="form-group">
+                        <div class="input-group">
+                          <h3 class="card-title pr-2">Pilih Date: </h3>
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="far fa-calendar-alt"></i>
+                            </span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control float-right"
+                            id="reservation"
+                          />
+                          <button
+                          type="button"
+                          class="btn btn-success ml-5"
+                          data-toggle="modal"
+                          data-target="#exampleModalBaru"
+                        >
+                          Tambah Baru
+                        </button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body p-0">
+                    <table class="table table-striped projects">
+                      <thead>
+                        <tr>
+                          <th>Title</th>
+                          <th>Created Date</th>
+                          <th>Created By</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Title A</td>
+                          <td>Created Date A</td>
+                          <td>Created By A</td>
+                          <td class="project-actions text-right">
+                            <a
+                              class="btn btn-primary btn-sm"
+                              data-toggle="modal"
+                              data-target="#exampleModal1"
+                            >
+                              <i class="fas fa-folder"> </i>
+                              View
+                            </a>
+                            <a
+                              class="btn btn-info btn-sm"
+                              data-toggle="modal"
+                              data-target="#exampleModalEdit1"
+                              href="#"
+                            >
+                              <i class="fas fa-pencil-alt"> </i>
+                              Edit
+                            </a>
+                            <a
+                              class="btn btn-danger btn-sm"
+                              data-toggle="modal"
+                              data-target="#exampleModalDelete"
+                              href="#"
+                            >
+                              <i class="fas fa-trash"> </i>
+                              Delete
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                            <td>Title B</td>
+                            <td>Created Date B</td>
+                            <td>Created By B</td>
+                            <td class="project-actions text-right">
+                              <a
+                                class="btn btn-primary btn-sm"
+                                data-toggle="modal"
+                                data-target="#exampleModal2"
+                              >
+                                <i class="fas fa-folder"> </i>
+                                View
+                              </a>
+                              <a
+                                class="btn btn-info btn-sm"
+                                data-toggle="modal"
+                                data-target="#exampleModalEdit1"
+                                href="#"
+                              >
+                                <i class="fas fa-pencil-alt"> </i>
+                                Edit
+                              </a>
+                              <a
+                                class="btn btn-danger btn-sm"
+                                data-toggle="modal"
+                                data-target="#exampleModalDelete"
+                                href="#"
+                              >
+                                <i class="fas fa-trash"> </i>
+                                Delete
+                              </a>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ./Content -->
+
+    <!-- Footer -->
+    <section style="background-color: #1e6f5c">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div>
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"
+                        >Copyright 2021 - Tunas Bertumbuh</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item border-right">
+                    <a class="nav-link text-white" href="#">Facebook</a>
+                  </li>
+                  <li class="nav-item border-right">
+                    <a class="nav-link text-white" href="#">Instagram</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Tik-Tok</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.Footer -->
+  </div>
+
+      <!-- Modal Tambah Baru -->
+    <div
+      class="modal fade"
+      id="exampleModalBaru"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tambah Baru</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>title</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Title"
+                aria-label="title"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea
+                class="form-control"
+                aria-label="desk"
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input
+                  type="file"
+                  class="custom-file-input"
+                  id="inputGroupFile01"
+                />
+                <label class="custom-file-label" for="inputGroupFile01"
+                  >Choose file</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Modal Tambah Baru -->
+
+    <!-- Modal Content View -->
+    <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        >
+        <div class="modal-dialog" role="document">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Title A</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th>Title</th>
+                                <td>Title A</td>
+                            </tr>
+                            <tr>
+                                <th>Slug</th>
+                                <td>Slug A</td>
+                            </tr>
+                            <tr>
+                                <th>Excerpt</th>
+                                <td>Excerpt A</td>
+                            </tr>
+                            <tr>
+                                <th>Body</th>
+                                <td>Body A</td>
+                            </tr>
+                            <tr>
+                                <th>Image</th>
+                                <td>
+                                    <img
+                                    class="p-2"
+                                    src="../../../dist/img/AdminLTELogo.png"
+                                    alt="patnership1"
+                                    />
+                                    <img
+                                    class="p-2"
+                                    src="../../../dist/img/AdminLTELogo.png"
+                                    alt="patnership1"
+                                    />
+                                    <img
+                                    class="p-2"
+                                    src="../../../dist/img/AdminLTELogo.png"
+                                    alt="patnership1"
+                                    />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        >
+        <div class="modal-dialog" role="document">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Title B</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th>Title</th>
+                                <td>Title B</td>
+                            </tr>
+                            <tr>
+                                <th>Slug</th>
+                                <td>Slug B</td>
+                            </tr>
+                            <tr>
+                                <th>Excerpt</th>
+                                <td>Excerpt B</td>
+                            </tr>
+                            <tr>
+                                <th>Body</th>
+                                <td>Body B</td>
+                            </tr>
+                            <tr>
+                                <th>Image</th>
+                                <td>
+                                    <img
+                                    class="p-2"
+                                    src="../../../dist/img/AdminLTELogo.png"
+                                    alt="patnership1"
+                                    />
+                                    <img
+                                    class="p-2"
+                                    src="../../../dist/img/AdminLTELogo.png"
+                                    alt="patnership1"
+                                    />
+                                    <img
+                                    class="p-2"
+                                    src="../../../dist/img/AdminLTELogo.png"
+                                    alt="patnership1"
+                                    />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- ./Modal Content View -->
+
+    <!-- Modal Edit -->
+    <div
+      class="modal fade"
+      id="exampleModalEdit1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Title A</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>title</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Title"
+                aria-label="title"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea
+                class="form-control"
+                aria-label="desk"
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input
+                  type="file"
+                  class="custom-file-input"
+                  id="inputGroupFile01"
+                />
+                <label class="custom-file-label" for="inputGroupFile01"
+                  >Choose file</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalEdit2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Title B</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>title</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Title"
+                aria-label="title"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea
+                class="form-control"
+                aria-label="desk"
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input
+                  type="file"
+                  class="custom-file-input"
+                  id="inputGroupFile01"
+                />
+                <label class="custom-file-label" for="inputGroupFile01"
+                  >Choose file</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Modal Edit -->
+
+  <!-- Modal Delete -->
+  <div
+    class="modal fade"
+    id="vertifikasi"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vertified?</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+          >
+            Cancel
+          </button>
+          <button type="button" class="btn btn-primary">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./Modal Delete -->
+
+  </body>
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="../../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="../../../plugins/select2/js/select2.full.min.js"></script>
+    <!-- InputMask -->
+    <script src="../../../plugins/moment/moment.min.js"></script>
+    <script src="../../../plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../../dist/js/demo.js"></script>
+    <script>
+        $(function () {
+          //Date range picker
+          $("#reservation").daterangepicker();
+          //Timepicker
+          $("#timepicker").datetimepicker({
+            format: "LT",
+          });
+  
+          //Bootstrap Duallistbox
+          $(".duallistbox").bootstrapDualListbox();
+  
+          //Colorpicker
+          $(".my-colorpicker1").colorpicker();
+          //color picker with addon
+          $(".my-colorpicker2").colorpicker();
+  
+          $(".my-colorpicker2").on("colorpickerChange", function (event) {
+            $(".my-colorpicker2 .fa-square").css("color", event.color.toString());
+          });
+  
+          $("input[data-bootstrap-switch]").each(function () {
+            $(this).bootstrapSwitch("state", $(this).prop("checked"));
+          });
+        });
+    </script>
+  </body>
+</html>
