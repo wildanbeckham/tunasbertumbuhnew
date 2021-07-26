@@ -16,3 +16,11 @@ body {
   color: white;
 }
 /* ./Project/Content-Project */
+
+/* Content/Artikel Info */
+#bg-shadow {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+/* ./Content/Artikel Info */
